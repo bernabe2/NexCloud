@@ -6,7 +6,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #141414;
+  background-color: #220f0f73;
 }
 /*---------------global-------------*/
 a {
@@ -47,7 +47,7 @@ p {
 /*---------------control-btn-------------*/
 .control-btn button {
   background: none;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgb(246, 241, 241);
   padding: 0;
   width: 50px;
   height: 50px;
@@ -96,7 +96,7 @@ p {
   left: 0;
   width: 430px;
   height: 300px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.4) 50%, rgba(83, 100, 141, 0) 100%);
+  background: linear-gradient(90deg, rgba(251, 251, 251, 0.8) 0%, rgba(248, 241, 241, 0.4) 50%, rgba(83, 100, 141, 0) 100%);
   z-index: -1;
 }
 .MovieBox img {

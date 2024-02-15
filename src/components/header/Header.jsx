@@ -1,8 +1,10 @@
-import React, { useState } from "react"
-import "./header.css"
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Importa Link desde React Router
+import "./header.css";
 
 const Header = () => {
-  const [Mobile, setMobile] = useState(false)
+  const [Mobile, setMobile] = useState(false);
+  
   return (
     <>
       <header>
@@ -11,25 +13,24 @@ const Header = () => {
             <div className='logo'>
               <img src='./images/logo.png' alt='' />
             </div>
-            {/*<ul className='flexSB'>*/}
             <ul className={Mobile ? "navMenu-list" : "flexSB"} onClick={() => setMobile(false)}>
               <li>
-                <a href='/'>Home</a>
+                <Link to='/'>Home</Link> {/* Usa Link en lugar de <a> */}
               </li>
               <li>
-                <a href='/'>Series</a>
+                <Link to='/series'>Series</Link> {/* Usa Link en lugar de <a> */}
               </li>
               <li>
-                <a href='/'>Movies</a>
+                <Link to='/movies'>Movies</Link> {/* Usa Link en lugar de <a> */}
               </li>
               <li>
-                <a href='/'>Pages</a>
+                <Link to='/pages'>Pages</Link> {/* Usa Link en lugar de <a> */}
               </li>
               <li>
-                <a href='/'>Pricing</a>
+                <Link to='/pricing'>Pricing</Link> {/* Usa Link en lugar de <a> */}
               </li>
               <li>
-                <a href='/'>Contact</a>
+                <Link to='/contact'>Contact</Link> {/* Usa Link en lugar de <a> */}
               </li>
             </ul>
             <button className='toggle' onClick={() => setMobile(!Mobile)}>
@@ -38,14 +39,14 @@ const Header = () => {
           </nav>
           <div className='account flexSB'>
             <i className='fa fa-search'></i>
-            <i class='fas fa-bell'></i>
+            <i className='fas fa-bell'></i>
             <i className='fas fa-user'></i>
             <button>Subscribe Now</button>
           </div>
         </div>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
